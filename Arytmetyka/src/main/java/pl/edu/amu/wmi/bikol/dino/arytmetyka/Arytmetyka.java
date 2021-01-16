@@ -13,4 +13,8 @@ public class Arytmetyka {
     public String potegowanie(String a, String b){
         return Integer.toString((int)Math.pow(Integer.parseInt(a), Integer.parseInt(b)));
     }
+    
+    public String dodawanie(String a, String b){
+        return Integer.toString(Integer.parseInt(a) + Integer.parseInt(b));
+    }
 }
