@@ -9,12 +9,20 @@ package pl.edu.amu.wmi.bikol.dino.arytmetyka;
  *
  * @author bikol
  */
+
 public class Arytmetyka {
-    public String potegowanie(String a, String b){
-        return Integer.toString((int)Math.pow(Integer.parseInt(a), Integer.parseInt(b)));
+    
+    public String convertTextToNumberText(String a){
+        if(a.equals("two")){
+            return "2";
+        }else if(a.equals("three")){
+            return "3";
+        }else{
+            return a;
+        }
     }
     
-    public String dodawanie(String a, String b){
-        return Integer.toString(Integer.parseInt(a) + Integer.parseInt(b));
+    public String potegowanie(String a, String b){
+        return Integer.toString((int)Math.pow(Integer.parseInt(convertTextToNumberText(a)), Integer.parseInt(convertTextToNumberText(b))));
     }
 }
