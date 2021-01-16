@@ -78,7 +78,7 @@ public class ArytmetykaTest {
         String a = new String("three");
         String b = new String("two");
         Arytmetyka instance = new Arytmetyka();
-        String expResult = "4";
+        String expResult = "9";
         String result = instance.potegowanie(a, b);
         assertEquals(expResult, result);
     }
