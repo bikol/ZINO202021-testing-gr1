@@ -39,4 +39,15 @@ public class ArytmetykaTest {
         assertEquals(expResult, result);
     }
     
+    @Test
+    public void testPotegowanie3() {
+        System.out.println("potegowanie3");
+        String a = "2";
+        String b = "2";
+        Arytmetyka instance = new Arytmetyka();
+        String expResult = "4";
+        String result = instance.potegowanie(a, b);
+        assertEquals(expResult, result);
+    }
+    
 }
