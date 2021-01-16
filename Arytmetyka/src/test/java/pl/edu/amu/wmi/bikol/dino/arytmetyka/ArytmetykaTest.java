@@ -50,14 +50,36 @@ public class ArytmetykaTest {
         assertEquals(expResult, result);
     }
     
-    @test
-    public void dodawanie() {
-        System.out.println("Dodawanie");
-        String a = "2";
-        String b = "2";
+    @Test
+    public void testPotegowanie4() {
+        System.out.println("potegowanie4");
+        String a = "two";
+        String b = "two";
         Arytmetyka instance = new Arytmetyka();
         String expResult = "4";
-        String result = instance.dodawanie(a, b);
+        String result = instance.potegowanie(a, b);
+        assertEquals(expResult, result);
+    }
+
+    @Test
+    public void testPotegowanie5() {
+        System.out.println("potegowanie5");
+        String a = new String("two");
+        String b = new String("two");
+        Arytmetyka instance = new Arytmetyka();
+        String expResult = "4";
+        String result = instance.potegowanie(a, b);
+        assertEquals(expResult, result);
+    }
+  
+    @Test
+    public void testPotegowanie6() {
+        System.out.println("potegowanie5");
+        String a = new String("three");
+        String b = new String("two");
+        Arytmetyka instance = new Arytmetyka();
+        String expResult = "4";
+        String result = instance.potegowanie(a, b);
         assertEquals(expResult, result);
     }
 }
