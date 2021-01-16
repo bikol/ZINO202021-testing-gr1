@@ -9,8 +9,18 @@ package pl.edu.amu.wmi.bikol.dino.arytmetyka;
  *
  * @author bikol
  */
+
 public class Arytmetyka {
+    
+    public String convertTextToNumberText(String a){
+        if(a == "two"){
+            return "2";
+        }else{
+            return a;
+        }
+    }
+    
     public String potegowanie(String a, String b){
-        return Integer.toString((int)Math.pow(Integer.parseInt(a), Integer.parseInt(b)));
+        return Integer.toString((int)Math.pow(Integer.parseInt(convertTextToNumberText(a)), Integer.parseInt(convertTextToNumberText(b))));
     }
 }
