@@ -13,7 +13,7 @@ package pl.edu.amu.wmi.bikol.dino.arytmetyka;
 public class Arytmetyka {
     
     public String convertTextToNumberText(String a){
-        if(a == "two"){
+        if(a.equals("two")){
             return "2";
         }else{
             return a;
