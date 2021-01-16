@@ -50,4 +50,14 @@ public class ArytmetykaTest {
         assertEquals(expResult, result);
     }
     
+    @test
+    public void dodawanie() {
+        System.out.println("Dodawanie");
+        String a = "2";
+        String b = "2";
+        Arytmetyka instance = new Arytmetyka();
+        String expResult = "4";
+        String result = instance.dodawanie(a, b);
+        assertEquals(expResult, result);
+    }
 }
