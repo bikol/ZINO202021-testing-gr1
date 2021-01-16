@@ -18,12 +18,23 @@ public class ArytmetykaTest {
     }
 
     @Test
-    public void testPotegowanie() {
-        System.out.println("potegowanie");
+    public void testPotegowanie1() {
+        System.out.println("potegowanie1");
         String a = "1";
         String b = "1";
         Arytmetyka instance = new Arytmetyka();
         String expResult = "1";
+        String result = instance.potegowanie(a, b);
+        assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void testPotegowanie2() {
+        System.out.println("potegowanie2");
+        String a = "0";
+        String b = "1";
+        Arytmetyka instance = new Arytmetyka();
+        String expResult = "0";
         String result = instance.potegowanie(a, b);
         assertEquals(expResult, result);
     }
