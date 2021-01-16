@@ -11,6 +11,6 @@ package pl.edu.amu.wmi.bikol.dino.arytmetyka;
  */
 public class Arytmetyka {
     public String potegowanie(String a, String b){
-        return a;
+        return Integer.toString((int)Math.pow(Integer.parseInt(a), Integer.parseInt(b)));
     }
 }
