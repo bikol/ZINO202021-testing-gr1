@@ -83,6 +83,17 @@ public class ArytmetykaTest {
         String result = instance.potegowanie(a, b);
         assertEquals(expResult, result);
     }
+    
+    @Test
+    public void testPotegowanie7() {
+        System.out.println("potegowanie7");
+        String a = new String("4");
+        String b = new String("0.5");
+        Arytmetyka instance = new Arytmetyka();
+        String expResult = "2";
+        String result = instance.potegowanie(a, b);
+        assertEquals(expResult, result);
+    }
 }
 
     
