@@ -15,6 +15,8 @@ public class Arytmetyka {
     public String convertTextToNumberText(String a){
         if(a.equals("two")){
             return "2";
+        }else if(a.equals("three")){
+            return "3";
         }else{
             return a;
         }
