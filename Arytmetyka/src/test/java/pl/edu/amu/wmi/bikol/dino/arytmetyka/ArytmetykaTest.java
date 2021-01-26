@@ -92,7 +92,6 @@ public class ArytmetykaTest {
         String result = instance.potegowanie(a, b);
         assertEquals(expResult, result);
     }
-}
 
     @Test
     public void testPotegowanie8() {
