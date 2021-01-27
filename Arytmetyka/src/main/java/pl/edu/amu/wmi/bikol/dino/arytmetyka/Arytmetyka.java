@@ -19,7 +19,10 @@ public class Arytmetyka {
             return "3";
         } else if (a.equals("four")) {
             return "4";
-        } else {
+        } else if (a.equals("five")){
+            return "5";
+        }
+        else {
             return a;
         }
     }
