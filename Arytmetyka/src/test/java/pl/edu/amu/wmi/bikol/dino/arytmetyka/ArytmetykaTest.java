@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * @author bikol
  */
 public class ArytmetykaTest {
-    
+
     public ArytmetykaTest() {
     }
 
@@ -27,7 +27,7 @@ public class ArytmetykaTest {
         String result = instance.potegowanie(a, b);
         assertEquals(expResult, result);
     }
-    
+
     @Test
     public void testPotegowanie2() {
         System.out.println("potegowanie2");
@@ -38,7 +38,7 @@ public class ArytmetykaTest {
         String result = instance.potegowanie(a, b);
         assertEquals(expResult, result);
     }
-    
+
     @Test
     public void testPotegowanie3() {
         System.out.println("potegowanie3");
@@ -49,10 +49,9 @@ public class ArytmetykaTest {
         String result = instance.potegowanie(a, b);
         assertEquals(expResult, result);
     }
-    
+
     @Test
     public void testPotegowanie4() {
-        System.out.println("potegowanie4");
         String a = "two";
         String b = "two";
         Arytmetyka instance = new Arytmetyka();
@@ -72,7 +71,6 @@ public class ArytmetykaTest {
         assertEquals(expResult, result);
     }
 
-  
     @Test
     public void testPotegowanie6() {
         System.out.println("potegowanie6");
@@ -83,7 +81,7 @@ public class ArytmetykaTest {
         String result = instance.potegowanie(a, b);
         assertEquals(expResult, result);
     }
-    
+
     @Test
     public void testPotegowanie7() {
         System.out.println("potegowanie7");
@@ -94,8 +92,16 @@ public class ArytmetykaTest {
         String result = instance.potegowanie(a, b);
         assertEquals(expResult, result);
     }
+
+    @Test
+    public void testPotegowanie8() {
+        System.out.println("potegowanie8");
+        String a = "3";
+        String b = "10";
+        Arytmetyka instance = new Arytmetyka();
+        String expResult = "59049";
+        String result = instance.potegowanie(a, b);
+        assertEquals(expResult, result);
+    }
+
 }
-
-    
-
-
