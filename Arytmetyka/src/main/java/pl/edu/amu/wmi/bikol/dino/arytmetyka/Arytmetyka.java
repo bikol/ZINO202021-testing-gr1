@@ -22,6 +22,13 @@ public class Arytmetyka {
         } else if (a.equals("five")){
             return "5";
         }
+		else if (a.equals("-one")){
+            return "-1";
+        }
+        else if (a.equals("-two")) {
+            return "-2";
+        }
+
         else {
             return a;
         }
