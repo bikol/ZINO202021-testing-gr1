@@ -27,7 +27,12 @@ public class Arytmetyka {
         }
     }
   
-    public String potegowanie(String a, String b){
-        return Integer.toString((int)Math.pow(Double.parseDouble(convertTextToNumberText(a)), Double.parseDouble(convertTextToNumberText(b))));
+	public String potegowanie(String a, String b){
+        double a_ = Double.parseDouble(convertTextToNumberText(a));
+        double b_ = Double.parseDouble(convertTextToNumberText(b));
+        if(b_<0){
+            return Double.toString(Math.pow(a_,b_));
+        }
+        else return Integer.toString((int)Math.pow(a_,b_));
     }
 }
