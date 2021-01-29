@@ -123,5 +123,15 @@ public class ArytmetykaTest {
         String result = instance.potegowanie(a, b);
         assertEquals(expResult, result);
     }
+	@Test
+    public void testPotegowanie11() {
+        System.out.println("potegowanie11");
+        String a = "-two";
+        String b = "-one";
+        Arytmetyka instance = new Arytmetyka();
+        String expResult = "-0.5";
+        String result = instance.potegowanie(a, b);
+        assertEquals(expResult, result);
+    }
 
 }
