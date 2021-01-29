@@ -10,7 +10,7 @@ package pl.edu.amu.wmi.bikol.dino.arytmetyka;
  * @author bikol
  */
 
-public class Arytmetyka {
+public class Arytmetyka { 
 
     public String convertTextToNumberText(String a) {
         if (a.equals("two")) {
@@ -30,6 +30,9 @@ public class Arytmetyka {
 	public String potegowanie(String a, String b){
         double a_ = Double.parseDouble(convertTextToNumberText(a));
         double b_ = Double.parseDouble(convertTextToNumberText(b));
+        if (a_==0 && b_==0){
+            return ("Wyrażenie nieoznaczone");
+        }
         if(b_<0){
             return Double.toString(Math.pow(a_,b_));
         }
