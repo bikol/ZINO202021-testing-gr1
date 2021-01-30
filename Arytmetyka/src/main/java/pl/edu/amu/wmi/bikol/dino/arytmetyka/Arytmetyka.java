@@ -5,6 +5,9 @@
  */
 package pl.edu.amu.wmi.bikol.dino.arytmetyka;
 
+import java.util.Arrays;
+import java.util.List;
+
 /**
  *
  * @author bikol
@@ -13,16 +16,20 @@ package pl.edu.amu.wmi.bikol.dino.arytmetyka;
 public class Arytmetyka {
 
     public String convertTextToNumberText(String a) {
-        if (a.equals("two")) {
-            return "2";
-        } else if (a.equals("three")) {
-            return "3";
-        } else if (a.equals("four")) {
-            return "4";
-        } else if (a.equals("five")){
-            return "5";
-        }
-        else {
+        int sgn;
+        List<String> word = Arrays.asList("one", "two", "three", "four", "five",
+                "six", "seven", "eight", "nine");
+
+        if (a.matches("-[^0-9]+")){
+            sgn = -1;
+            a = a.substring(1);
+        } else {
+            sgn = 1;
+        };
+
+        if (word.contains(a)){
+            return Integer.toString((word.indexOf(a) + 1) * sgn);
+        } else {
             return a;
         }
     }
