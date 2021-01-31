@@ -13,7 +13,7 @@ import java.util.List;
  * @author bikol
  */
 
-public class Arytmetyka {
+public class Arytmetyka { 
 
     public String convertTextToNumberText(String a) {
         int sgn;
@@ -37,6 +37,9 @@ public class Arytmetyka {
 	public String potegowanie(String a, String b){
         double a_ = Double.parseDouble(convertTextToNumberText(a));
         double b_ = Double.parseDouble(convertTextToNumberText(b));
+        if (a_==0 && b_==0){
+            return ("Wyrażenie nieoznaczone");
+        }
         if(b_<0){
             return Double.toString(Math.pow(a_,b_));
         }
