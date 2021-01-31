@@ -126,6 +126,16 @@ public class ArytmetykaTest {
 	@Test
     public void testPotegowanie11() {
         System.out.println("potegowanie11");
+        String a = "0";
+        String b = "0";
+        Arytmetyka instance = new Arytmetyka();
+        String expResult = "Wyrażenie nieoznaczone";
+        String result = instance.potegowanie(a, b);
+        assertEquals(expResult, result);
+    }
+	@Test
+    public void testPotegowanie12() {
+        System.out.println("potegowanie11");
         String a = "-two";
         String b = "-one";
         Arytmetyka instance = new Arytmetyka();
