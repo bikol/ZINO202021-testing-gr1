@@ -21,6 +21,8 @@ public class Arytmetyka {
             return "4";
         } else if (a.equals("five")){
             return "5";
+        } else if (a.equals("six")){
+            return "6";
         }
         else {
             return a;
