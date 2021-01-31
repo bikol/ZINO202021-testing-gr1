@@ -155,4 +155,5 @@ public class ArytmetykaTest {
         String b = "six";
         Arytmetyka instance = new Arytmetyka();
         String expResult = "15625";
+    }
 }
