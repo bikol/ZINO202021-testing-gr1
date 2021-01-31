@@ -5,31 +5,31 @@
  */
 package pl.edu.amu.wmi.bikol.dino.arytmetyka;
 
+import java.util.Arrays;
+import java.util.List;
+
 /**
  *
  * @author bikol
  */
 
-public class Arytmetyka {
+public class Arytmetyka { 
 
     public String convertTextToNumberText(String a) {
-        if (a.equals("two")) {
-            return "2";
-        } else if (a.equals("three")) {
-            return "3";
-        } else if (a.equals("four")) {
-            return "4";
-        } else if (a.equals("five")){
-            return "5";
-        }
-		else if (a.equals("-one")){
-            return "-1";
-        }
-        else if (a.equals("-two")) {
-            return "-2";
-        }
+int sgn;
+        List<String> word = Arrays.asList("-one", "one", "-two", "two", "-three", "three", "-four", "four", "-five", "five",
+                "-six", "six", "-seven", "seven", "-eight", "eight", "-nine", "nine");
 
-        else {
+        if (a.matches("-[^0-9]+")){
+            sgn = -1;
+            a = a.substring(1);
+        } else {
+            sgn = 1;
+        };
+
+        if (word.contains(a)){
+            return Integer.toString((word.indexOf(a) + 1) * sgn);
+        } else {
             return a;
         }
     }
@@ -37,6 +37,9 @@ public class Arytmetyka {
 	public String potegowanie(String a, String b){
         double a_ = Double.parseDouble(convertTextToNumberText(a));
         double b_ = Double.parseDouble(convertTextToNumberText(b));
+        if (a_==0 && b_==0){
+            return ("Wyrażenie nieoznaczone");
+        }
         if(b_<0){
             return Double.toString(Math.pow(a_,b_));
         }
