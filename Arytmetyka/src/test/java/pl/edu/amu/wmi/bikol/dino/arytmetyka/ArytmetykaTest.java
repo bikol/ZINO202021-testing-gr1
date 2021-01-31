@@ -135,7 +135,7 @@ public class ArytmetykaTest {
     }
 	@Test
     public void testPotegowanie12() {
-        System.out.println("potegowanie11");
+        System.out.println("potegowanie12");
         String a = "-two";
         String b = "-one";
         Arytmetyka instance = new Arytmetyka();
