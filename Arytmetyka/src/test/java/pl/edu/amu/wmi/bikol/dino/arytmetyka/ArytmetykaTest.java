@@ -136,14 +136,23 @@ public class ArytmetykaTest {
         String result = instance.potegowanie(a, b);
         assertEquals(expResult, result);
     }
-      @Test
+
+    @Test
     public void testPotegowanie12() {
-        System.out.println("potegowanie12");
+        System.out.println("potegowanie13");
+        String a = "-2";
+        String b = "nine";
+        Arytmetyka instance = new Arytmetyka();
+        String expResult = "-512";
+        String result = instance.potegowanie(a, b);
+        assertEquals(expResult, result);
+    }
+  
+        @Test
+    public void testPotegowanie13() {
+        System.out.println("potegowanie13");
         String a = "five";
         String b = "six";
         Arytmetyka instance = new Arytmetyka();
         String expResult = "15625";
-        String result = instance.potegowanie(a, b);
-        assertEquals(expResult, result);
-    }
 }
