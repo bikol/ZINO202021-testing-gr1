@@ -16,9 +16,19 @@ import java.util.List;
 public class Arytmetyka { 
 
     public String convertTextToNumberText(String a) {
-int sgn;
-        List<String> word = Arrays.asList("-one", "one", "-two", "two", "-three", "three", "-four", "four", "-five", "five",
-                "-six", "six", "-seven", "seven", "-eight", "eight", "-nine", "nine");
+        int sgn;
+        List<String> word = Arrays.asList("one", "two", "three", "four", "five",
+                "six", "seven", "eight", "nine");
+				
+		if (a.contains("/")) {
+		String[] rat = a.split("/");
+
+		var =  Double.parseDouble(rat[0])/Double.parseDouble(rat[1]);
+		System.out.print(Double.toString(var));
+
+		return Double.toString(var);
+
+		}
 
         if (a.matches("-[^0-9]+")){
             sgn = -1;

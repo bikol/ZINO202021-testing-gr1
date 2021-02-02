@@ -125,26 +125,6 @@ public class ArytmetykaTest {
         String result = instance.potegowanie(a, b);
         assertEquals(expResult, result);
     }
-	@Test
-    public void testPotegowanie11() {
-        System.out.println("potegowanie11");
-        String a = "0";
-        String b = "0";
-        Arytmetyka instance = new Arytmetyka();
-        String expResult = "Wyrażenie nieoznaczone";
-        String result = instance.potegowanie(a, b);
-        assertEquals(expResult, result);
-    }
-	@Test
-    public void testPotegowanie12() {
-        System.out.println("potegowanie12");
-        String a = "-two";
-        String b = "-one";
-        Arytmetyka instance = new Arytmetyka();
-        String expResult = "-0.5";
-        String result = instance.potegowanie(a, b);
-        assertEquals(expResult, result);
-    }
 
     @Test
     public void testPotegowanie11() {
@@ -164,6 +144,17 @@ public class ArytmetykaTest {
         String b = "nine";
         Arytmetyka instance = new Arytmetyka();
         String expResult = "-512";
+        String result = instance.potegowanie(a, b);
+        assertEquals(expResult, result);
+    }
+	
+	@Test
+    public void testPotegowanie13() {
+        System.out.println("potegowanie13");
+        String a = "1/2";
+        String b = "2";
+        Arytmetyka instance = new Arytmetyka();
+        String expResult = "0.25";
         String result = instance.potegowanie(a, b);
         assertEquals(expResult, result);
     }
