@@ -17,6 +17,7 @@ public class Arytmetyka {
 
     public String convertTextToNumberText(String a) {
         int sgn;
+		double var;
         List<String> word = Arrays.asList("one", "two", "three", "four", "five",
                 "six", "seven", "eight", "nine");
 				
