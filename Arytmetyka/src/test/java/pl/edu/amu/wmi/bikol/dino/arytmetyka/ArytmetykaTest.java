@@ -151,10 +151,10 @@ public class ArytmetykaTest {
 	@Test
     public void testPotegowanie13() {
         System.out.println("potegowanie13");
-        String a = "1/2";
+        String a = "4/2";
         String b = "2";
         Arytmetyka instance = new Arytmetyka();
-        String expResult = "0.25";
+        String expResult = "2";
         String result = instance.potegowanie(a, b);
         assertEquals(expResult, result);
     }
