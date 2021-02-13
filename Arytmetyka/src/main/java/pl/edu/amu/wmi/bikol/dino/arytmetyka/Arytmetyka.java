@@ -17,17 +17,17 @@ public class Arytmetyka {
 
     public String convertTextToNumberText(String a) {
         int sgn;
-		double var;
+		            double var;
         List<String> word = Arrays.asList("one", "two", "three", "four", "five",
                 "six", "seven", "eight", "nine", "ten");
-				
-		if (a.contains("/")) {
-		String[] rat = a.split("/");
+			
+                if (a.contains("/")) {
+		            String[] rat = a.split("/");
 
-		var =  Double.parseDouble(rat[0])/Double.parseDouble(rat[1]);
-		System.out.print(Double.toString(var));
+		            var =  Double.parseDouble(rat[0])/Double.parseDouble(rat[1]);
+		            System.out.print(Double.toString(var));
 
-		return Double.toString(var);
+		            return Double.toString(var);
 
 		}
 
