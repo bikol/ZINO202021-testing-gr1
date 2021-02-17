@@ -139,7 +139,7 @@ public class ArytmetykaTest {
 
     @Test
     public void testPotegowanie12() {
-        System.out.println("potegowanie13");
+        System.out.println("potegowanie12");
         String a = "-2";
         String b = "nine";
         Arytmetyka instance = new Arytmetyka();
@@ -155,6 +155,17 @@ public class ArytmetykaTest {
         String b = "2";
         Arytmetyka instance = new Arytmetyka();
         String expResult = "4";
+        String result = instance.potegowanie(a, b);
+        assertEquals(expResult, result);
+    }
+
+    @Test
+    public void testPotegowanie14() {
+        System.out.println("potegowanie14");
+        String a = "ten";
+        String b = "2";
+        Arytmetyka instance = new Arytmetyka();
+        String expResult = "100";
         String result = instance.potegowanie(a, b);
         assertEquals(expResult, result);
     }
