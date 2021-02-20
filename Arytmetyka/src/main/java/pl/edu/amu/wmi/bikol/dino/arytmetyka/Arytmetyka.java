@@ -19,7 +19,7 @@ public class Arytmetyka {
         int sgn;
 		            double var;
         List<String> word = Arrays.asList("one", "two", "three", "four", "five",
-                "six", "seven", "eight", "nine", "ten");
+                "six", "seven", "eight", "nine", "ten", "eleven", "twelve");
 			
                 if (a.contains("/")) {
 		            String[] rat = a.split("/");
