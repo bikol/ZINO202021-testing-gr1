@@ -169,4 +169,16 @@ public class ArytmetykaTest {
         String result = instance.potegowanie(a, b);
         assertEquals(expResult, result);
     }
+	
+	
+    @Test
+    public void testPotegowanie15() {
+        System.out.println("potegowanie15");
+        String a = "-4";
+        String b = "twelve";
+        Arytmetyka instance = new Arytmetyka();
+        String expResult = "16777216";
+        String result = instance.potegowanie(a, b);
+        assertEquals(expResult, result);
+    }
 }
